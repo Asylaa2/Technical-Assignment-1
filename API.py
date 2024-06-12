@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 
-app = Flask(name)
+app = Flask(_name_)
 
 # Variabel global untuk menyimpan suhu
 current_temperature = None
@@ -16,5 +16,5 @@ def receive_temperature():
     else:
         return jsonify({'message': 'No temperature in data'}), 400
 
-if name == 'main':
+if _name_ == '_main_':
     app.run(host='0.0.0.0', port=5000, debug=True)
